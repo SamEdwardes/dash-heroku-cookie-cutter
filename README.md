@@ -121,10 +121,10 @@ You should now be able to visit your app and see it in action. You can visit min
 ## Using Containers vs. Virtual Environments
 
 There are two ways I have deployed apps to Heroku:
-- Using conda virtual environments (e.g. [Candian election sentiment analysis](https://github.com/SamEdwardes/sentiment-cdn-election))
+- Using conda virtual environments (e.g. [Canadian election sentiment analysis](https://github.com/SamEdwardes/sentiment-cdn-election))
 - Using containers (e.g. this project)
 
-Overall I would reccommend using the container process. I found even with using virtual environments there were many times were the app would run locally, but then would not run when I push to Heroku. Additionally, as my virtual enviornment grew in size Heroku begain rejecting it because it was over 500 MB. With containers I don't beleive this limit exists.
+Overall I would recommend using the container process. I found even with using virtual environments there were many times were the app would run locally, but then would not run when I push to Heroku. Additionally, as my virtual environment grew in size Heroku began rejecting it because it was over 500 MB. With containers I don't believe this limit exists.
 
 
 ## Helpful links:
