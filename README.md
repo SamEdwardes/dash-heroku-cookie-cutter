@@ -72,13 +72,13 @@ I chose to use a docker image ([amancevice/pandas](https://hub.docker.com/r/aman
 In the terminal entering the following command:
 
 ```bash
-docker built -t dash-heroku:latest .
+docker image build -t dash-heroku:latest .
 ```
 
 Next you can validate if the image is working by running the image:
 
 ```
-docker run -d -p 5000:5000 dash-heroku
+docker container run -d -p 5000:5000 dash-heroku
 ```
 
 To see if your app is running open [http://localhost:5000/](http://localhost:5000/) (you can click on this link and it should take you to your app).
