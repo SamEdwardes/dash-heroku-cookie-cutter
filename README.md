@@ -128,4 +128,4 @@ Overall I would recommend using the container process. I found even with using v
 
 
 ## Helpful links:
-- [Containerise your Python Flask using Docker and deploy it onto Heroku](https://medium.com/@ksashok/containerise-your-python-flask-using-docker-and-deploy-it-onto-heroku-a0b48d025e43)
+- [Containerize your Python Flask using Docker and deploy it onto Heroku](https://medium.com/@ksashok/containerise-your-python-flask-using-docker-and-deploy-it-onto-heroku-a0b48d025e43)
