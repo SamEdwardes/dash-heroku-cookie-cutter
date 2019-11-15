@@ -9,11 +9,13 @@ import plotly_express as px
 import plotly.figure_factory as ff
 import plotly.graph_objects as go
 # OTHER LIBRARIES
+import os
 import pandas as pd
 
 
 external_stylesheets = ["https://codepen.io/chriddyp/pen/bWLwgP.css"]
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+port = int(os.environ.get("PORT", 5000))
 # app.scripts.config.serve_locally=True
 
 ##############################################
@@ -42,13 +44,7 @@ app.layout = html.Div(children=[
         placeholder="Select a country"
 
     ),
-    html.Br(),
-    html.Br(),
-    dash_table.DataTable(
-        id="table_01",
-        columns=[{"name": i, "id": i} for i in df.columns],
-        data=df.head().to_dict("rows")
-    )
+    html.Br()
 ])
 
 ##############################################
@@ -74,9 +70,8 @@ def update_plot_01(selected_country):
     )
     return fig
 
-# check it
-
 
 if __name__ == "__main__":
-    app.run_server(debug=True,
-                   port=8050)
+    app.run_server(debug=False,
+                   host="0.0.0.0",
+                   port=port)

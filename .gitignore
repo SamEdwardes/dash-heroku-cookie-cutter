@@ -1,3 +1,11 @@
+####################################
+# Added by Sam Edwardes - START
+####################################
+.devcontainer/*
+####################################
+# Added by Sam Edwardes - END
+####################################
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
