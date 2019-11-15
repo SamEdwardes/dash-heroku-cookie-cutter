@@ -2,7 +2,6 @@
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
-import dash_table
 from dash.dependencies import Input, Output
 # PLOTLY
 import plotly_express as px
@@ -16,7 +15,7 @@ import pandas as pd
 external_stylesheets = ["https://codepen.io/chriddyp/pen/bWLwgP.css"]
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 port = int(os.environ.get("PORT", 5000))
-# app.scripts.config.serve_locally=True
+
 
 ##############################################
 # DATA
@@ -24,10 +23,6 @@ port = int(os.environ.get("PORT", 5000))
 
 df = pd.read_csv("data/gapminder.csv")
 
-
-##############################################
-# HELPER FUNCTION
-##############################################
 
 ##############################################
 # APP LAYOUT
